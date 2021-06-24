@@ -1,12 +1,12 @@
 class CategoriesController < ApplicationController
 
     def index
-        catagories = Catagory.all
-        render json: catagories
+        categories = Category.all
+        render json: categories
     end
 
     def show
-        catagory = Catagory.find(params[:id])
-        render json: catagory
+        category = Category.find(params[:id])
+        render json: category
     end
 end
