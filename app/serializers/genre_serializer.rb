@@ -1,5 +1,5 @@
 class GenreSerializer < ActiveModel::Serializer
-  attributes :id, :name
+  attributes :id, :name, :media
 
   has_many :categories
   has_many :platforms, through: :categories

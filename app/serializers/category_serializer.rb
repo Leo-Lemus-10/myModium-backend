@@ -1,5 +1,5 @@
 class CategorySerializer < ActiveModel::Serializer
-  attributes :id, :name
+  attributes :id, :name, :genre
 
   belongs_to :genre
   belongs_to :platform
